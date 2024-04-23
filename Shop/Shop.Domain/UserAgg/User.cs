@@ -38,13 +38,14 @@ public class User : AggregateRoot
 		Email = email;
 		Gender = gender;
 	}
-
+	
 	public static User RegisterUser(string email,string phoneNumber, string password, IDomainUserService domainService)
 	{
 		return new User("", "", phoneNumber, email, password, Gender.None, domainService);
 	}
 	public void AddAddress(UserAddress address)
 	{
+		
 		address.UserId = Id;
 		Addresses.Add(address);
 
@@ -74,6 +75,7 @@ public class User : AggregateRoot
 
 	public void ChargeWallet(Wallet wallet)
 	{
+		wallet.UserId = Id;
 		Wallets.Add(wallet);
 	}
 
