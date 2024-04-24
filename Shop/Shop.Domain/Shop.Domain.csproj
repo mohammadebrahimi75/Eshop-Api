@@ -14,6 +14,8 @@
     <Folder Include="OrderAgg\Events\" />
     <Folder Include="OrderAgg\Enums\" />
     <Folder Include="OrderAgg\ValueObjects\" />
+    <Folder Include="RoleAgg\Enums\" />
+    <Folder Include="SellerAgg\Enums\" />
     <Folder Include="UserAgg\Enums\" />
     <Folder Include="UserAgg\Services\" />
   </ItemGroup>
